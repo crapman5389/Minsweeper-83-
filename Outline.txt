@@ -1,0 +1,23 @@
+My Minsweeper adaptation for the Ti-83 will be text based, and will play on a 7x16 grid. The top line will be reserved for score?
+(The top line will be reserved for something)
+
+Basic Components:
+-Image for splashscreen ('cuz why the fuck not?) EDIT: no .83i - too advanced - Replace with output finction text
+-Bomb position randomizer (pre determone bomb locations and store in variables)
+-Cursor component (Use arrow keys to move a charachtor to represent the cursor. Will be displayed with output function and variables.)
+-Bomb counter for opened spaces (use variables and math to determine)
+-Game loss animation (replace all bombs uncovered+not with a new charahter to represent exploded bomb)
+-Bomb flagging system (replace blank square with charachter to represnt flag when user selects it for bomb
+-Game loss screen (either .83i or use of output function) EDIT: no .83i - too advanced
+
+Bomb (Exploding)- Asterisk*
+Flag- Exclamtion!
+Uncharted- 0
+Cursor- X
+
+
+
+
+Thoughts:
+Plan for bomb position determination- 2 Lists of random numbers in a certain range. use nested loop with random number functions to determine coordinates.
+Cursor spawn + movement - Maybie use a getkey loop for (arrow keys) inside a getkey loop for (enter) // to enable movement until a position/tile is selected.
