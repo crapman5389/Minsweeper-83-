@@ -21,3 +21,4 @@ Cursor- X
 Thoughts:
 Plan for bomb position determination- 2 Lists of random numbers in a certain range. use nested loop with random number functions to determine coordinates.
 Cursor spawn + movement - Maybie use a getkey loop for (arrow keys) inside a getkey loop for (enter) // to enable movement until a position/tile is selected.
+ERR:DOMAIN on cursor print - Speculated Reson -> Value not set beforehand, tried to print at {0,0}. Set value of [V,B] before tracking loop.
