@@ -22,3 +22,6 @@ Thoughts:
 Plan for bomb position determination- 2 Lists of random numbers in a certain range. use nested loop with random number functions to determine coordinates.
 Cursor spawn + movement - Maybie use a getkey loop for (arrow keys) inside a getkey loop for (enter) // to enable movement until a position/tile is selected.
 ERR:DOMAIN on cursor print - Speculated Reson -> Value not set beforehand, tried to print at {0,0}. Set value of [V,B] before tracking loop.
+Cursor movement is now functional; SILL LEFT TO CORRECT:
+-BOUNDARY ----->Change the if movement statemnets to require 2 conitions 1.The Key value(no problem) 2.The value higher/lower than [V/B] will not make it go out of bounds. (Logic and values will differ on each axis/ if statement)
+-GOING OVER TILES OTHER THAN "0"S ----->Theory - Not enough variables, so create 3 new lists, one for X value, one for Y value, and one for key value. Reference this information when replacing a tile when the cursor moves off it and replace it with the correct caracter.
