@@ -25,3 +25,6 @@ ERR:DOMAIN on cursor print - Speculated Reson -> Value not set beforehand, tried
 Cursor movement is now functional; SILL LEFT TO CORRECT:
 -BOUNDARY ----->Change the if movement statemnets to require 2 conitions 1.The Key value(no problem) 2.The value higher/lower than [V/B] will not make it go out of bounds. (Logic and values will differ on each axis/ if statement)
 -GOING OVER TILES OTHER THAN "0"S ----->Theory - Not enough variables, so create 3 new lists, one for X value, one for Y value, and one for key value. Reference this information when replacing a tile when the cursor moves off it and replace it with the correct caracter.
+	replace autosapwning zeroes with a loop that checks the charachter position lists (L7{X},L8{Y},L9{Pre-Established Charachter Value})
+	Edit thoughts:2 values can be stored per list entry. Ex: L1(x) returns Y. 2 variables, 1 entry. Might still not be useful because there can only be one variable per each value of X per list, because the X variable identifies the position on the list.
+	probably stick with one variable in one list per each position value, that enables having multiple of each X value and Y value.
