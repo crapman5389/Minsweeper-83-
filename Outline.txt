@@ -32,3 +32,6 @@ Cursor movement is now functional; SILL LEFT TO CORRECT:
 	:"TEST"->Str1	
 	:Output(5,5,Str1
 	Will output whatever is stored in Str1 at (5,5) just as if whatever is stored in Str1 was actually in the command.
+
+Discovery- Can not store a number to a list position that does not yet exist (or the one after one that exists)
+	Ex. If L3 has two numbers in it (L3(1)=4, L3(2)=7) you cannot store a new value in any position other than L3(1), L3(2), and L3(3). It will return INVALID DIM of you try to do so.
