@@ -28,3 +28,7 @@ Cursor movement is now functional; SILL LEFT TO CORRECT:
 	replace autosapwning zeroes with a loop that checks the charachter position lists (L7{X},L8{Y},L9{Pre-Established Charachter Value})
 	Edit thoughts:2 values can be stored per list entry. Ex: L1(x) returns Y. 2 variables, 1 entry. Might still not be useful because there can only be one variable per each value of X per list, because the X variable identifies the position on the list.
 	probably stick with one variable in one list per each position value, that enables having multiple of each X value and Y value.
+	NEW DEVELOPMENT (11/29/18) - Learned to store Text in a string. Can use the string in an output command Ex. 
+	:"TEST"->Str1	
+	:Output(5,5,Str1
+	Will output whatever is stored in Str1 at (5,5) just as if whatever is stored in Str1 was actually in the command.
