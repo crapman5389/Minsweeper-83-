@@ -37,3 +37,5 @@ Discovery- Can not store a number to a list position that does not yet exist (or
 	Ex. If L3 has two numbers in it (L3(1)=4, L3(2)=7) you cannot store a new value in any position other than L3(1), L3(2), and L3(3). It will return INVALID DIM of you try to do so.
 
 Theory for futureproofed cursor replacement- Use variables that store cursors old position to reference the list (X*Y). Then use the information from the list to store a charachter to a string. Replace the ""0"" in the Output( command.
+Reason for error in latest revision is the cursor tracker is not running on the same corrdinate system that the tile placer is. The coordinate system is using 8x16(128 list positions) while the tile spawner is using 7x16(112 list positions). When the tile placer tries to use the information from the position tracker
+it references a list position that does not exist, because the list only has 112 positions, and is trying to reference a value higher thn that. usually (8,15) which is list position 120.
