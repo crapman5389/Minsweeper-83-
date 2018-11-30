@@ -35,3 +35,5 @@ Cursor movement is now functional; SILL LEFT TO CORRECT:
 
 Discovery- Can not store a number to a list position that does not yet exist (or the one after one that exists)
 	Ex. If L3 has two numbers in it (L3(1)=4, L3(2)=7) you cannot store a new value in any position other than L3(1), L3(2), and L3(3). It will return INVALID DIM of you try to do so.
+
+Theory for futureproofed cursor replacement- Use variables that store cursors old position to reference the list (X*Y). Then use the information from the list to store a charachter to a string. Replace the ""0"" in the Output( command.
